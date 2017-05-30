@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_avt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="16dp"
+            android:src="@drawable/avt" />
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/iv_avt"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/iv_person"
+            android:text="Nguyễn Văn Cừ" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:id="@+id/iv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_person"
+            android:layout_toEndOf="@id/iv_avt"
+            app:srcCompat="@drawable/ic_class_black_24dp" />
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="wrap_content"
+            android:text="4E"
+            android:layout_below="@id/iv_person"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/iv_class"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
